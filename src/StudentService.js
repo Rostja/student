@@ -9,7 +9,7 @@ export class StudentService{
     }
 
     async getStudent(id){
-        const responds = await axios.get`${url}/${id}`;
+        const responds = await axios.get(`${url}/${id}`);
         return responds.data;
     }
 }
