@@ -7,7 +7,7 @@
 </header>
 
 <main class="container">
-  <StudentComponent/>
+  <router-view></router-view>
 
 </main>
 
@@ -18,17 +18,15 @@
 </template>
 
 <script>
-import StudentComponent from './components/StudentComponent.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    StudentComponent
-  },
+  
   data (){
     return {title: "Hello everyone"}
   } 
-  }
+}
 
 
 </script>

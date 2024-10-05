@@ -17,6 +17,7 @@
           <td>{{student.name}}</td>
           <td><a :href="'mailto:'+ student.email">{{student.email}}</a></td>
           <td>
+            <RouterLink class="button" :to="'/detail/'+student.id">Details</RouterLink>
             <a href="#" class="button button-green">Edit</a>
             <button class="button button-red">Delete</button>
           </td>
